@@ -1,0 +1,813 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns:xfadata="http://www.xfa.org/schema/xfa-data/1.0/">
+ <element name="Form">
+  <complexType>
+   <sequence>
+    <element name="HeaderNode" type="HeaderNode"/>
+   </sequence>
+  </complexType>
+ </element>
+ <complexType name="HeaderNode">
+  <sequence>
+   <element name="Bday">
+    <annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+     <appinfo>
+      <dc:title>Day</dc:title>
+     </appinfo>
+    </annotation>
+    <simpleType>
+     <restriction base="string">
+      <maxLength value="2"/>
+     </restriction>
+    </simpleType>
+   </element>
+   <element name="Bilaskal">
+    <simpleType>
+     <restriction base="string">
+      <maxLength value="3"/>
+     </restriction>
+    </simpleType>
+   </element>
+   <element name="Bilaskaltxt">
+    <annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+     <appinfo>
+      <dc:title>Short Descript.</dc:title>
+     </appinfo>
+    </annotation>
+    <simpleType>
+     <restriction base="string">
+      <maxLength value="60"/>
+     </restriction>
+    </simpleType>
+   </element>
+   <element name="Bilatype">
+    <annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+     <appinfo>
+      <dc:title>Print Variant</dc:title>
+     </appinfo>
+    </annotation>
+    <simpleType>
+     <restriction base="string">
+      <maxLength value="1"/>
+     </restriction>
+    </simpleType>
+   </element>
+   <element name="Bjjb">
+    <annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+     <appinfo>
+      <dc:title>Fiscal Year</dc:title>
+     </appinfo>
+    </annotation>
+    <simpleType>
+     <restriction base="string">
+      <maxLength value="4"/>
+     </restriction>
+    </simpleType>
+   </element>
+   <element name="Bjjv">
+    <annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+     <appinfo>
+      <dc:title>Fiscal Year</dc:title>
+     </appinfo>
+    </annotation>
+    <simpleType>
+     <restriction base="string">
+      <maxLength value="4"/>
+     </restriction>
+    </simpleType>
+   </element>
+   <element name="Bmmb">
+    <annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+     <appinfo>
+      <dc:title>Period</dc:title>
+     </appinfo>
+    </annotation>
+    <simpleType>
+     <restriction base="string">
+      <maxLength value="2"/>
+     </restriction>
+    </simpleType>
+   </element>
+   <element name="Bmmv">
+    <annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+     <appinfo>
+      <dc:title>Period</dc:title>
+     </appinfo>
+    </annotation>
+    <simpleType>
+     <restriction base="string">
+      <maxLength value="2"/>
+     </restriction>
+    </simpleType>
+   </element>
+   <element name="Bmonth">
+    <annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+     <appinfo>
+      <dc:title>Period</dc:title>
+     </appinfo>
+    </annotation>
+    <simpleType>
+     <restriction base="string">
+      <maxLength value="2"/>
+     </restriction>
+    </simpleType>
+   </element>
+   <element name="BperiodD">
+    <annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+     <appinfo>
+      <dc:title>Period</dc:title>
+     </appinfo>
+    </annotation>
+    <simpleType>
+     <restriction base="string">
+      <maxLength value="50"/>
+     </restriction>
+    </simpleType>
+   </element>
+   <element name="Btxtcol">
+    <annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+     <appinfo>
+      <dc:title>Column name</dc:title>
+     </appinfo>
+    </annotation>
+    <simpleType>
+     <restriction base="string">
+      <maxLength value="40"/>
+     </restriction>
+    </simpleType>
+   </element>
+   <element name="Byear">
+    <annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+     <appinfo>
+      <dc:title>Fiscal Year</dc:title>
+     </appinfo>
+    </annotation>
+    <simpleType>
+     <restriction base="string">
+      <maxLength value="4"/>
+     </restriction>
+    </simpleType>
+   </element>
+   <element name="Cdate">
+    <annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+     <appinfo>
+      <dc:title>Date</dc:title>
+     </appinfo>
+    </annotation>
+    <simpleType>
+     <restriction base="dateTime"/>
+    </simpleType>
+   </element>
+   <element name="Company">
+    <annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+     <appinfo>
+      <dc:title>Name</dc:title>
+     </appinfo>
+    </annotation>
+    <simpleType>
+     <restriction base="string">
+      <maxLength value="30"/>
+     </restriction>
+    </simpleType>
+   </element>
+   <element name="Ctime">
+    <annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+     <appinfo>
+      <dc:title>Time</dc:title>
+     </appinfo>
+    </annotation>
+    <simpleType>
+     <restriction base="time"/>
+    </simpleType>
+   </element>
+   <element name="Currency">
+    <annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+     <appinfo>
+      <dc:title>Currency</dc:title>
+     </appinfo>
+    </annotation>
+    <simpleType>
+     <restriction base="string">
+      <maxLength value="5"/>
+     </restriction>
+    </simpleType>
+   </element>
+   <element name="Cuser">
+    <annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+     <appinfo>
+      <dc:title>Chgd by</dc:title>
+     </appinfo>
+    </annotation>
+    <simpleType>
+     <restriction base="string">
+      <maxLength value="12"/>
+     </restriction>
+    </simpleType>
+   </element>
+   <element name="Fscdes">
+    <annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+     <appinfo>
+      <dc:title>Form Str. Descr.</dc:title>
+     </appinfo>
+    </annotation>
+    <simpleType>
+     <restriction base="string">
+      <maxLength value="30"/>
+     </restriction>
+    </simpleType>
+   </element>
+   <element name="Gsber">
+    <annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+     <appinfo>
+      <dc:title>Business Area</dc:title>
+     </appinfo>
+    </annotation>
+    <simpleType>
+     <restriction base="string">
+      <maxLength value="4"/>
+     </restriction>
+    </simpleType>
+   </element>
+   <element name="Pdf">
+    <annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+     <appinfo>
+      <dc:title>Adobe PDF Form</dc:title>
+     </appinfo>
+    </annotation>
+    <simpleType>
+     <restriction base="boolean"/>
+    </simpleType>
+   </element>
+   <element name="Prctr">
+    <annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+     <appinfo>
+      <dc:title>Profit Center</dc:title>
+     </appinfo>
+    </annotation>
+    <simpleType>
+     <restriction base="string">
+      <maxLength value="10"/>
+     </restriction>
+    </simpleType>
+   </element>
+   <element name="Title">
+    <annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+     <appinfo>
+      <dc:title>Title bar text</dc:title>
+     </appinfo>
+    </annotation>
+    <simpleType>
+     <restriction base="string">
+      <maxLength value="70"/>
+     </restriction>
+    </simpleType>
+   </element>
+   <element name="Vday">
+    <annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+     <appinfo>
+      <dc:title>Day</dc:title>
+     </appinfo>
+    </annotation>
+    <simpleType>
+     <restriction base="string">
+      <maxLength value="2"/>
+     </restriction>
+    </simpleType>
+   </element>
+   <element name="Vjjb">
+    <annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+     <appinfo>
+      <dc:title>Fiscal Year</dc:title>
+     </appinfo>
+    </annotation>
+    <simpleType>
+     <restriction base="string">
+      <maxLength value="4"/>
+     </restriction>
+    </simpleType>
+   </element>
+   <element name="Vjjv">
+    <annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+     <appinfo>
+      <dc:title>Fiscal Year</dc:title>
+     </appinfo>
+    </annotation>
+    <simpleType>
+     <restriction base="string">
+      <maxLength value="4"/>
+     </restriction>
+    </simpleType>
+   </element>
+   <element name="Vmmb">
+    <annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+     <appinfo>
+      <dc:title>Period</dc:title>
+     </appinfo>
+    </annotation>
+    <simpleType>
+     <restriction base="string">
+      <maxLength value="2"/>
+     </restriction>
+    </simpleType>
+   </element>
+   <element name="Vmmv">
+    <annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+     <appinfo>
+      <dc:title>Period</dc:title>
+     </appinfo>
+    </annotation>
+    <simpleType>
+     <restriction base="string">
+      <maxLength value="2"/>
+     </restriction>
+    </simpleType>
+   </element>
+   <element name="Vmonth">
+    <annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+     <appinfo>
+      <dc:title>Period</dc:title>
+     </appinfo>
+    </annotation>
+    <simpleType>
+     <restriction base="string">
+      <maxLength value="2"/>
+     </restriction>
+    </simpleType>
+   </element>
+   <element name="VperiodD">
+    <annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+     <appinfo>
+      <dc:title>Period</dc:title>
+     </appinfo>
+    </annotation>
+    <simpleType>
+     <restriction base="string">
+      <maxLength value="50"/>
+     </restriction>
+    </simpleType>
+   </element>
+   <element name="Vtxtcol">
+    <annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+     <appinfo>
+      <dc:title>Column name</dc:title>
+     </appinfo>
+    </annotation>
+    <simpleType>
+     <restriction base="string">
+      <maxLength value="40"/>
+     </restriction>
+    </simpleType>
+   </element>
+   <element name="Vyear">
+    <annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+     <appinfo>
+      <dc:title>Fiscal Year</dc:title>
+     </appinfo>
+    </annotation>
+    <simpleType>
+     <restriction base="string">
+      <maxLength value="4"/>
+     </restriction>
+    </simpleType>
+   </element>
+   <element name="toItemAS">
+    <complexType>
+     <sequence>
+      <element name="ItemNode_AS" maxOccurs="unbounded" minOccurs="1" type="ItemNode_AS"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="toItemLE">
+    <complexType>
+     <sequence>
+      <element name="ItemNode_LE" maxOccurs="unbounded" minOccurs="1" type="ItemNode_LE"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="toItemPL">
+    <complexType>
+     <sequence>
+      <element name="ItemNode_PL" maxOccurs="unbounded" minOccurs="1" type="ItemNode_PL"/>
+     </sequence>
+    </complexType>
+   </element>
+  </sequence>
+ </complexType>
+ <complexType name="ItemNode_PL">
+  <sequence>
+   <element name="Bsum">
+    <annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+     <appinfo>
+      <dc:title>Amount</dc:title>
+     </appinfo>
+    </annotation>
+    <simpleType>
+     <restriction base="decimal">
+      <totalDigits value="24"/>
+      <fractionDigits value="3"/>
+     </restriction>
+    </simpleType>
+   </element>
+   <element name="Ergsl">
+    <annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+     <appinfo>
+      <dc:title>FS Item</dc:title>
+     </appinfo>
+    </annotation>
+    <simpleType>
+     <restriction base="string">
+      <maxLength value="10"/>
+     </restriction>
+    </simpleType>
+   </element>
+   <element name="Linelev">
+    <annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+     <appinfo>
+      <dc:title>Number of Offset</dc:title>
+     </appinfo>
+    </annotation>
+    <simpleType>
+     <restriction base="string">
+      <maxLength value="2"/>
+     </restriction>
+    </simpleType>
+   </element>
+   <element name="Linenr">
+    <annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+     <appinfo>
+      <dc:title>Line Number</dc:title>
+     </appinfo>
+    </annotation>
+    <simpleType>
+     <restriction base="string">
+      <maxLength value="3"/>
+     </restriction>
+    </simpleType>
+   </element>
+   <element name="Linenrext">
+    <annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+     <appinfo>
+      <dc:title>Seq. Number</dc:title>
+     </appinfo>
+    </annotation>
+    <simpleType>
+     <restriction base="string">
+      <maxLength value="4"/>
+     </restriction>
+    </simpleType>
+   </element>
+   <element name="Linesec">
+    <annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+     <appinfo>
+      <dc:title>Section</dc:title>
+     </appinfo>
+    </annotation>
+    <simpleType>
+     <restriction base="string">
+      <maxLength value="2"/>
+     </restriction>
+    </simpleType>
+   </element>
+   <element name="Linetext">
+    <annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+     <appinfo>
+      <dc:title>Line Description</dc:title>
+     </appinfo>
+    </annotation>
+    <simpleType>
+     <restriction base="string">
+      <maxLength value="80"/>
+     </restriction>
+    </simpleType>
+   </element>
+   <element name="Linetype">
+    <annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+     <appinfo>
+      <dc:title>Line Type</dc:title>
+     </appinfo>
+    </annotation>
+    <simpleType>
+     <restriction base="string">
+      <maxLength value="1"/>
+     </restriction>
+    </simpleType>
+   </element>
+   <element name="Saldo">
+    <annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+     <appinfo>
+      <dc:title>Difference Amount</dc:title>
+     </appinfo>
+    </annotation>
+    <simpleType>
+     <restriction base="decimal">
+      <totalDigits value="24"/>
+      <fractionDigits value="3"/>
+     </restriction>
+    </simpleType>
+   </element>
+   <element name="Vsum">
+    <annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+     <appinfo>
+      <dc:title>Amount for Comp.</dc:title>
+     </appinfo>
+    </annotation>
+    <simpleType>
+     <restriction base="decimal">
+      <totalDigits value="24"/>
+      <fractionDigits value="3"/>
+     </restriction>
+    </simpleType>
+   </element>
+   <element name="Waers">
+    <annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+     <appinfo>
+      <dc:title>Currency</dc:title>
+     </appinfo>
+    </annotation>
+    <simpleType>
+     <restriction base="string">
+      <maxLength value="5"/>
+     </restriction>
+    </simpleType>
+   </element>
+  </sequence>
+ </complexType>
+ <complexType name="ItemNode_LE">
+  <sequence>
+   <element name="Bsum">
+    <annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+     <appinfo>
+      <dc:title>Amount</dc:title>
+     </appinfo>
+    </annotation>
+    <simpleType>
+     <restriction base="decimal">
+      <totalDigits value="24"/>
+      <fractionDigits value="3"/>
+     </restriction>
+    </simpleType>
+   </element>
+   <element name="Ergsl">
+    <annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+     <appinfo>
+      <dc:title>FS Item</dc:title>
+     </appinfo>
+    </annotation>
+    <simpleType>
+     <restriction base="string">
+      <maxLength value="10"/>
+     </restriction>
+    </simpleType>
+   </element>
+   <element name="Linelev">
+    <annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+     <appinfo>
+      <dc:title>Number of Offset</dc:title>
+     </appinfo>
+    </annotation>
+    <simpleType>
+     <restriction base="string">
+      <maxLength value="2"/>
+     </restriction>
+    </simpleType>
+   </element>
+   <element name="Linenr">
+    <annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+     <appinfo>
+      <dc:title>Line Number</dc:title>
+     </appinfo>
+    </annotation>
+    <simpleType>
+     <restriction base="string">
+      <maxLength value="3"/>
+     </restriction>
+    </simpleType>
+   </element>
+   <element name="Linenrext">
+    <annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+     <appinfo>
+      <dc:title>Seq. Number</dc:title>
+     </appinfo>
+    </annotation>
+    <simpleType>
+     <restriction base="string">
+      <maxLength value="4"/>
+     </restriction>
+    </simpleType>
+   </element>
+   <element name="Linesec">
+    <annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+     <appinfo>
+      <dc:title>Section</dc:title>
+     </appinfo>
+    </annotation>
+    <simpleType>
+     <restriction base="string">
+      <maxLength value="2"/>
+     </restriction>
+    </simpleType>
+   </element>
+   <element name="Linetext">
+    <annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+     <appinfo>
+      <dc:title>Line Description</dc:title>
+     </appinfo>
+    </annotation>
+    <simpleType>
+     <restriction base="string">
+      <maxLength value="80"/>
+     </restriction>
+    </simpleType>
+   </element>
+   <element name="Linetype">
+    <annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+     <appinfo>
+      <dc:title>Line Type</dc:title>
+     </appinfo>
+    </annotation>
+    <simpleType>
+     <restriction base="string">
+      <maxLength value="1"/>
+     </restriction>
+    </simpleType>
+   </element>
+   <element name="Saldo">
+    <annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+     <appinfo>
+      <dc:title>Difference Amount</dc:title>
+     </appinfo>
+    </annotation>
+    <simpleType>
+     <restriction base="decimal">
+      <totalDigits value="24"/>
+      <fractionDigits value="3"/>
+     </restriction>
+    </simpleType>
+   </element>
+   <element name="Vsum">
+    <annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+     <appinfo>
+      <dc:title>Amount for Comp.</dc:title>
+     </appinfo>
+    </annotation>
+    <simpleType>
+     <restriction base="decimal">
+      <totalDigits value="24"/>
+      <fractionDigits value="3"/>
+     </restriction>
+    </simpleType>
+   </element>
+   <element name="Waers">
+    <annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+     <appinfo>
+      <dc:title>Currency</dc:title>
+     </appinfo>
+    </annotation>
+    <simpleType>
+     <restriction base="string">
+      <maxLength value="5"/>
+     </restriction>
+    </simpleType>
+   </element>
+  </sequence>
+ </complexType>
+ <complexType name="ItemNode_AS">
+  <sequence>
+   <element name="Bsum">
+    <annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+     <appinfo>
+      <dc:title>Amount</dc:title>
+     </appinfo>
+    </annotation>
+    <simpleType>
+     <restriction base="decimal">
+      <totalDigits value="24"/>
+      <fractionDigits value="3"/>
+     </restriction>
+    </simpleType>
+   </element>
+   <element name="Ergsl">
+    <annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+     <appinfo>
+      <dc:title>FS Item</dc:title>
+     </appinfo>
+    </annotation>
+    <simpleType>
+     <restriction base="string">
+      <maxLength value="10"/>
+     </restriction>
+    </simpleType>
+   </element>
+   <element name="Linelev">
+    <annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+     <appinfo>
+      <dc:title>Number of Offset</dc:title>
+     </appinfo>
+    </annotation>
+    <simpleType>
+     <restriction base="string">
+      <maxLength value="2"/>
+     </restriction>
+    </simpleType>
+   </element>
+   <element name="Linenr">
+    <annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+     <appinfo>
+      <dc:title>Line Number</dc:title>
+     </appinfo>
+    </annotation>
+    <simpleType>
+     <restriction base="string">
+      <maxLength value="3"/>
+     </restriction>
+    </simpleType>
+   </element>
+   <element name="Linenrext">
+    <annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+     <appinfo>
+      <dc:title>Seq. Number</dc:title>
+     </appinfo>
+    </annotation>
+    <simpleType>
+     <restriction base="string">
+      <maxLength value="4"/>
+     </restriction>
+    </simpleType>
+   </element>
+   <element name="Linesec">
+    <annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+     <appinfo>
+      <dc:title>Section</dc:title>
+     </appinfo>
+    </annotation>
+    <simpleType>
+     <restriction base="string">
+      <maxLength value="2"/>
+     </restriction>
+    </simpleType>
+   </element>
+   <element name="Linetext">
+    <annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+     <appinfo>
+      <dc:title>Line Description</dc:title>
+     </appinfo>
+    </annotation>
+    <simpleType>
+     <restriction base="string">
+      <maxLength value="80"/>
+     </restriction>
+    </simpleType>
+   </element>
+   <element name="Linetype">
+    <annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+     <appinfo>
+      <dc:title>Line Type</dc:title>
+     </appinfo>
+    </annotation>
+    <simpleType>
+     <restriction base="string">
+      <maxLength value="1"/>
+     </restriction>
+    </simpleType>
+   </element>
+   <element name="Saldo">
+    <annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+     <appinfo>
+      <dc:title>Difference Amount</dc:title>
+     </appinfo>
+    </annotation>
+    <simpleType>
+     <restriction base="decimal">
+      <totalDigits value="24"/>
+      <fractionDigits value="3"/>
+     </restriction>
+    </simpleType>
+   </element>
+   <element name="Vsum">
+    <annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+     <appinfo>
+      <dc:title>Amount for Comp.</dc:title>
+     </appinfo>
+    </annotation>
+    <simpleType>
+     <restriction base="decimal">
+      <totalDigits value="24"/>
+      <fractionDigits value="3"/>
+     </restriction>
+    </simpleType>
+   </element>
+   <element name="Waers">
+    <annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+     <appinfo>
+      <dc:title>Currency</dc:title>
+     </appinfo>
+    </annotation>
+    <simpleType>
+     <restriction base="string">
+      <maxLength value="5"/>
+     </restriction>
+    </simpleType>
+   </element>
+  </sequence>
+ </complexType>
+</schema>

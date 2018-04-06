@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:sap="http://www.sap.com/Protocols/SAPData">
+	<edmx:DataServices m:DataServiceVersion="2.0">
+		<Schema Namespace="FDP_IDCNBSAIS_FORM_SRV" sap:schema-version="1" xml:lang="en" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+			<EntityType Name="QueryNode" sap:content-version="1">
+				<Key>
+					<PropertyRef Name="Language"/>
+				</Key>
+				<Property Name="Language" Nullable="false" Type="Edm.String" sap:creatable="false" sap:filterable="false" sap:label="Language" sap:sortable="false" sap:unicode="false" sap:updatable="false"/>
+				<NavigationProperty FromRole="FromRole_QuerytoHeader" Name="toHeader" Relationship="FDP_IDCNBSAIS_FORM_SRV.QuerytoHeader" ToRole="ToRole_QuerytoHeader"/>
+			</EntityType>
+			<EntityType Name="HeaderNode" sap:content-version="1">
+				<Key>
+					<PropertyRef Name="Byear"/>
+					<PropertyRef Name="Bmonth"/>
+					<PropertyRef Name="Bday"/>
+				</Key>
+				<Property MaxLength="30" Name="Fscdes" Nullable="false" Type="Edm.String" sap:creatable="false" sap:filterable="false" sap:label="Form Str. Descr." sap:sortable="false" sap:unicode="false" sap:updatable="false"/>
+				<Property MaxLength="30" Name="Company" Nullable="false" Type="Edm.String" sap:creatable="false" sap:filterable="false" sap:label="Name" sap:sortable="false" sap:unicode="false" sap:updatable="false"/>
+				<Property MaxLength="4" Name="Byear" Nullable="false" Type="Edm.String" sap:creatable="false" sap:filterable="false" sap:label="Fiscal Year" sap:sortable="false" sap:unicode="false" sap:updatable="false"/>
+				<Property MaxLength="2" Name="Bmonth" Nullable="false" Type="Edm.String" sap:creatable="false" sap:filterable="false" sap:label="Period" sap:sortable="false" sap:unicode="false" sap:updatable="false"/>
+				<Property MaxLength="2" Name="Bday" Nullable="false" Type="Edm.String" sap:creatable="false" sap:filterable="false" sap:label="Day" sap:sortable="false" sap:unicode="false" sap:updatable="false"/>
+				<Property MaxLength="4" Name="Vyear" Nullable="false" Type="Edm.String" sap:creatable="false" sap:filterable="false" sap:label="Fiscal Year" sap:sortable="false" sap:unicode="false" sap:updatable="false"/>
+				<Property MaxLength="2" Name="Vmonth" Nullable="false" Type="Edm.String" sap:creatable="false" sap:filterable="false" sap:label="Period" sap:sortable="false" sap:unicode="false" sap:updatable="false"/>
+				<Property MaxLength="2" Name="Vday" Nullable="false" Type="Edm.String" sap:creatable="false" sap:filterable="false" sap:label="Day" sap:sortable="false" sap:unicode="false" sap:updatable="false"/>
+				<Property MaxLength="4" Name="Bjjv" Nullable="false" Type="Edm.String" sap:creatable="false" sap:filterable="false" sap:label="Fiscal Year" sap:sortable="false" sap:unicode="false" sap:updatable="false"/>
+				<Property MaxLength="2" Name="Bmmv" Nullable="false" Type="Edm.String" sap:creatable="false" sap:filterable="false" sap:label="Period" sap:sortable="false" sap:unicode="false" sap:updatable="false"/>
+				<Property MaxLength="4" Name="Bjjb" Nullable="false" Type="Edm.String" sap:creatable="false" sap:filterable="false" sap:label="Fiscal Year" sap:sortable="false" sap:unicode="false" sap:updatable="false"/>
+				<Property MaxLength="2" Name="Bmmb" Nullable="false" Type="Edm.String" sap:creatable="false" sap:filterable="false" sap:label="Period" sap:sortable="false" sap:unicode="false" sap:updatable="false"/>
+				<Property MaxLength="4" Name="Vjjv" Nullable="false" Type="Edm.String" sap:creatable="false" sap:filterable="false" sap:label="Fiscal Year" sap:sortable="false" sap:unicode="false" sap:updatable="false"/>
+				<Property MaxLength="2" Name="Vmmv" Nullable="false" Type="Edm.String" sap:creatable="false" sap:filterable="false" sap:label="Period" sap:sortable="false" sap:unicode="false" sap:updatable="false"/>
+				<Property MaxLength="4" Name="Vjjb" Nullable="false" Type="Edm.String" sap:creatable="false" sap:filterable="false" sap:label="Fiscal Year" sap:sortable="false" sap:unicode="false" sap:updatable="false"/>
+				<Property MaxLength="2" Name="Vmmb" Nullable="false" Type="Edm.String" sap:creatable="false" sap:filterable="false" sap:label="Period" sap:sortable="false" sap:unicode="false" sap:updatable="false"/>
+				<Property MaxLength="50" Name="BperiodD" Nullable="false" Type="Edm.String" sap:creatable="false" sap:filterable="false" sap:label="Period" sap:sortable="false" sap:unicode="false" sap:updatable="false"/>
+				<Property MaxLength="50" Name="VperiodD" Nullable="false" Type="Edm.String" sap:creatable="false" sap:filterable="false" sap:label="Period" sap:sortable="false" sap:unicode="false" sap:updatable="false"/>
+				<Property MaxLength="5" Name="Currency" Nullable="false" Type="Edm.String" sap:creatable="false" sap:filterable="false" sap:label="Currency" sap:semantics="currency-code" sap:sortable="false" sap:unicode="false" sap:updatable="false"/>
+				<Property MaxLength="3" Name="Bilaskal" Nullable="false" Type="Edm.String" sap:creatable="false" sap:filterable="false" sap:label="Scaling" sap:sortable="false" sap:unicode="false" sap:updatable="false"/>
+				<Property MaxLength="60" Name="Bilaskaltxt" Nullable="false" Type="Edm.String" sap:creatable="false" sap:filterable="false" sap:label="Short Descript." sap:sortable="false" sap:unicode="false" sap:updatable="false"/>
+				<Property MaxLength="1" Name="Bilatype" Nullable="false" Type="Edm.String" sap:creatable="false" sap:filterable="false" sap:label="Print Variant" sap:sortable="false" sap:unicode="false" sap:updatable="false"/>
+				<Property MaxLength="70" Name="Title" Nullable="false" Type="Edm.String" sap:creatable="false" sap:filterable="false" sap:label="Title bar text" sap:sortable="false" sap:unicode="false" sap:updatable="false"/>
+				<Property MaxLength="40" Name="Btxtcol" Nullable="false" Type="Edm.String" sap:creatable="false" sap:filterable="false" sap:label="Column name" sap:sortable="false" sap:unicode="false" sap:updatable="false"/>
+				<Property MaxLength="40" Name="Vtxtcol" Nullable="false" Type="Edm.String" sap:creatable="false" sap:filterable="false" sap:label="Column name" sap:sortable="false" sap:unicode="false" sap:updatable="false"/>
+				<Property Name="Pdf" Nullable="false" Type="Edm.Boolean" sap:creatable="false" sap:filterable="false" sap:label="Adobe PDF Form" sap:sortable="false" sap:unicode="false" sap:updatable="false"/>
+				<Property MaxLength="4" Name="Gsber" Nullable="false" Type="Edm.String" sap:creatable="false" sap:filterable="false" sap:label="Business Area" sap:sortable="false" sap:unicode="false" sap:updatable="false"/>
+				<Property MaxLength="10" Name="Prctr" Nullable="false" Type="Edm.String" sap:creatable="false" sap:filterable="false" sap:label="Profit Center" sap:sortable="false" sap:unicode="false" sap:updatable="false"/>
+				<Property Name="Cdate" Nullable="false" Precision="7" Type="Edm.DateTime" sap:creatable="false" sap:filterable="false" sap:label="Date" sap:sortable="false" sap:unicode="false" sap:updatable="false"/>
+				<Property Name="Ctime" Nullable="false" Precision="0" Type="Edm.Time" sap:creatable="false" sap:filterable="false" sap:label="Time" sap:sortable="false" sap:unicode="false" sap:updatable="false"/>
+				<Property MaxLength="12" Name="Cuser" Nullable="false" Type="Edm.String" sap:creatable="false" sap:filterable="false" sap:label="Chgd by" sap:sortable="false" sap:unicode="false" sap:updatable="false"/>
+				<NavigationProperty FromRole="FromRole_HeadertoLE" Name="toItemLE" Relationship="FDP_IDCNBSAIS_FORM_SRV.HeadertoLE" ToRole="ToRole_HeadertoLE"/>
+				<NavigationProperty FromRole="FromRole_HeadertoPL" Name="toItemPL" Relationship="FDP_IDCNBSAIS_FORM_SRV.HeadertoPL" ToRole="ToRole_HeadertoPL"/>
+				<NavigationProperty FromRole="FromRole_HeadertoAS" Name="toItemAS" Relationship="FDP_IDCNBSAIS_FORM_SRV.HeadertoAS" ToRole="ToRole_HeadertoAS"/>
+			</EntityType>
+			<EntityType Name="ItemNode_AS" sap:content-version="1">
+				<Key>
+					<PropertyRef Name="Linenr"/>
+				</Key>
+				<Property MaxLength="3" Name="Linenr" Nullable="false" Type="Edm.String" sap:creatable="false" sap:filterable="false" sap:label="Line Number" sap:sortable="false" sap:unicode="false" sap:updatable="false"/>
+				<Property MaxLength="2" Name="Linesec" Nullable="false" Type="Edm.String" sap:creatable="false" sap:filterable="false" sap:label="Section" sap:sortable="false" sap:unicode="false" sap:updatable="false"/>
+				<Property MaxLength="2" Name="Linelev" Nullable="false" Type="Edm.String" sap:creatable="false" sap:filterable="false" sap:label="Number of Offset" sap:sortable="false" sap:unicode="false" sap:updatable="false"/>
+				<Property MaxLength="1" Name="Linetype" Nullable="false" Type="Edm.String" sap:creatable="false" sap:filterable="false" sap:label="Line Type" sap:sortable="false" sap:unicode="false" sap:updatable="false"/>
+				<Property MaxLength="80" Name="Linetext" Nullable="false" Type="Edm.String" sap:creatable="false" sap:filterable="false" sap:label="Line Description" sap:sortable="false" sap:unicode="false" sap:updatable="false"/>
+				<Property MaxLength="4" Name="Linenrext" Nullable="false" Type="Edm.String" sap:creatable="false" sap:filterable="false" sap:label="Seq. Number" sap:sortable="false" sap:unicode="false" sap:updatable="false"/>
+				<Property MaxLength="10" Name="Ergsl" Nullable="false" Type="Edm.String" sap:creatable="false" sap:filterable="false" sap:label="FS Item" sap:sortable="false" sap:unicode="false" sap:updatable="false"/>
+				<Property Name="Bsum" Nullable="false" Precision="24" Scale="3" Type="Edm.Decimal" sap:creatable="false" sap:filterable="false" sap:label="Amount" sap:sortable="false" sap:unicode="false" sap:unit="Waers" sap:updatable="false"/>
+				<Property Name="Vsum" Nullable="false" Precision="24" Scale="3" Type="Edm.Decimal" sap:creatable="false" sap:filterable="false" sap:label="Amount for Comp." sap:sortable="false" sap:unicode="false" sap:unit="Waers" sap:updatable="false"/>
+				<Property Name="Saldo" Nullable="false" Precision="24" Scale="3" Type="Edm.Decimal" sap:creatable="false" sap:filterable="false" sap:label="Difference Amount" sap:sortable="false" sap:unicode="false" sap:unit="Waers" sap:updatable="false"/>
+				<Property MaxLength="5" Name="Waers" Nullable="false" Type="Edm.String" sap:creatable="false" sap:filterable="false" sap:label="Currency" sap:semantics="currency-code" sap:sortable="false" sap:unicode="false" sap:updatable="false"/>
+			</EntityType>
+			<EntityType Name="ItemNode_LE" sap:content-version="1">
+				<Key>
+					<PropertyRef Name="Linenr"/>
+				</Key>
+				<Property MaxLength="3" Name="Linenr" Nullable="false" Type="Edm.String" sap:creatable="false" sap:filterable="false" sap:label="Line Number" sap:sortable="false" sap:unicode="false" sap:updatable="false"/>
+				<Property MaxLength="2" Name="Linesec" Nullable="false" Type="Edm.String" sap:creatable="false" sap:filterable="false" sap:label="Section" sap:sortable="false" sap:unicode="false" sap:updatable="false"/>
+				<Property MaxLength="2" Name="Linelev" Nullable="false" Type="Edm.String" sap:creatable="false" sap:filterable="false" sap:label="Number of Offset" sap:sortable="false" sap:unicode="false" sap:updatable="false"/>
+				<Property MaxLength="1" Name="Linetype" Nullable="false" Type="Edm.String" sap:creatable="false" sap:filterable="false" sap:label="Line Type" sap:sortable="false" sap:unicode="false" sap:updatable="false"/>
+				<Property MaxLength="80" Name="Linetext" Nullable="false" Type="Edm.String" sap:creatable="false" sap:filterable="false" sap:label="Line Description" sap:sortable="false" sap:unicode="false" sap:updatable="false"/>
+				<Property MaxLength="4" Name="Linenrext" Nullable="false" Type="Edm.String" sap:creatable="false" sap:filterable="false" sap:label="Seq. Number" sap:sortable="false" sap:unicode="false" sap:updatable="false"/>
+				<Property MaxLength="10" Name="Ergsl" Nullable="false" Type="Edm.String" sap:creatable="false" sap:filterable="false" sap:label="FS Item" sap:sortable="false" sap:unicode="false" sap:updatable="false"/>
+				<Property Name="Bsum" Nullable="false" Precision="24" Scale="3" Type="Edm.Decimal" sap:creatable="false" sap:filterable="false" sap:label="Amount" sap:sortable="false" sap:unicode="false" sap:unit="Waers" sap:updatable="false"/>
+				<Property Name="Vsum" Nullable="false" Precision="24" Scale="3" Type="Edm.Decimal" sap:creatable="false" sap:filterable="false" sap:label="Amount for Comp." sap:sortable="false" sap:unicode="false" sap:unit="Waers" sap:updatable="false"/>
+				<Property Name="Saldo" Nullable="false" Precision="24" Scale="3" Type="Edm.Decimal" sap:creatable="false" sap:filterable="false" sap:label="Difference Amount" sap:sortable="false" sap:unicode="false" sap:unit="Waers" sap:updatable="false"/>
+				<Property MaxLength="5" Name="Waers" Nullable="false" Type="Edm.String" sap:creatable="false" sap:filterable="false" sap:label="Currency" sap:semantics="currency-code" sap:sortable="false" sap:unicode="false" sap:updatable="false"/>
+			</EntityType>
+			<EntityType Name="ItemNode_PL" sap:content-version="1">
+				<Key>
+					<PropertyRef Name="Linenr"/>
+				</Key>
+				<Property MaxLength="3" Name="Linenr" Nullable="false" Type="Edm.String" sap:creatable="false" sap:filterable="false" sap:label="Line Number" sap:sortable="false" sap:unicode="false" sap:updatable="false"/>
+				<Property MaxLength="2" Name="Linesec" Nullable="false" Type="Edm.String" sap:creatable="false" sap:filterable="false" sap:label="Section" sap:sortable="false" sap:unicode="false" sap:updatable="false"/>
+				<Property MaxLength="2" Name="Linelev" Nullable="false" Type="Edm.String" sap:creatable="false" sap:filterable="false" sap:label="Number of Offset" sap:sortable="false" sap:unicode="false" sap:updatable="false"/>
+				<Property MaxLength="1" Name="Linetype" Nullable="false" Type="Edm.String" sap:creatable="false" sap:filterable="false" sap:label="Line Type" sap:sortable="false" sap:unicode="false" sap:updatable="false"/>
+				<Property MaxLength="80" Name="Linetext" Nullable="false" Type="Edm.String" sap:creatable="false" sap:filterable="false" sap:label="Line Description" sap:sortable="false" sap:unicode="false" sap:updatable="false"/>
+				<Property MaxLength="4" Name="Linenrext" Nullable="false" Type="Edm.String" sap:creatable="false" sap:filterable="false" sap:label="Seq. Number" sap:sortable="false" sap:unicode="false" sap:updatable="false"/>
+				<Property MaxLength="10" Name="Ergsl" Nullable="false" Type="Edm.String" sap:creatable="false" sap:filterable="false" sap:label="FS Item" sap:sortable="false" sap:unicode="false" sap:updatable="false"/>
+				<Property Name="Bsum" Nullable="false" Precision="24" Scale="3" Type="Edm.Decimal" sap:creatable="false" sap:filterable="false" sap:label="Amount" sap:sortable="false" sap:unicode="false" sap:unit="Waers" sap:updatable="false"/>
+				<Property Name="Vsum" Nullable="false" Precision="24" Scale="3" Type="Edm.Decimal" sap:creatable="false" sap:filterable="false" sap:label="Amount for Comp." sap:sortable="false" sap:unicode="false" sap:unit="Waers" sap:updatable="false"/>
+				<Property Name="Saldo" Nullable="false" Precision="24" Scale="3" Type="Edm.Decimal" sap:creatable="false" sap:filterable="false" sap:label="Difference Amount" sap:sortable="false" sap:unicode="false" sap:unit="Waers" sap:updatable="false"/>
+				<Property MaxLength="5" Name="Waers" Nullable="false" Type="Edm.String" sap:creatable="false" sap:filterable="false" sap:label="Currency" sap:semantics="currency-code" sap:sortable="false" sap:unicode="false" sap:updatable="false"/>
+			</EntityType>
+			<Association Name="HeadertoPL" sap:content-version="1">
+				<End Multiplicity="1" Role="FromRole_HeadertoPL" Type="FDP_IDCNBSAIS_FORM_SRV.HeaderNode"/>
+				<End Multiplicity="*" Role="ToRole_HeadertoPL" Type="FDP_IDCNBSAIS_FORM_SRV.ItemNode_PL"/>
+			</Association>
+			<Association Name="HeadertoAS" sap:content-version="1">
+				<End Multiplicity="1" Role="FromRole_HeadertoAS" Type="FDP_IDCNBSAIS_FORM_SRV.HeaderNode"/>
+				<End Multiplicity="*" Role="ToRole_HeadertoAS" Type="FDP_IDCNBSAIS_FORM_SRV.ItemNode_AS"/>
+			</Association>
+			<Association Name="HeadertoLE" sap:content-version="1">
+				<End Multiplicity="1" Role="FromRole_HeadertoLE" Type="FDP_IDCNBSAIS_FORM_SRV.HeaderNode"/>
+				<End Multiplicity="*" Role="ToRole_HeadertoLE" Type="FDP_IDCNBSAIS_FORM_SRV.ItemNode_LE"/>
+			</Association>
+			<Association Name="QuerytoHeader" sap:content-version="1">
+				<End Multiplicity="0..1" Role="FromRole_QuerytoHeader" Type="FDP_IDCNBSAIS_FORM_SRV.QueryNode"/>
+				<End Multiplicity="0..1" Role="ToRole_QuerytoHeader" Type="FDP_IDCNBSAIS_FORM_SRV.HeaderNode"/>
+			</Association>
+			<EntityContainer Name="FDP_IDCNBSAIS_FORM_SRV_Entities" m:IsDefaultEntityContainer="true" sap:supported-formats="atom json xlsx">
+				<EntitySet EntityType="FDP_IDCNBSAIS_FORM_SRV.QueryNode" Name="QueryNodeSet" sap:addressable="false" sap:content-version="1" sap:creatable="false" sap:deletable="false" sap:pageable="false" sap:updatable="false"/>
+				<EntitySet EntityType="FDP_IDCNBSAIS_FORM_SRV.HeaderNode" Name="HeaderNodeSet" sap:addressable="false" sap:content-version="1" sap:creatable="false" sap:deletable="false" sap:pageable="false" sap:updatable="false"/>
+				<EntitySet EntityType="FDP_IDCNBSAIS_FORM_SRV.ItemNode_AS" Name="ItemNodeASSet" sap:addressable="false" sap:content-version="1" sap:creatable="false" sap:deletable="false" sap:pageable="false" sap:updatable="false"/>
+				<EntitySet EntityType="FDP_IDCNBSAIS_FORM_SRV.ItemNode_LE" Name="ItemNodeLESet" sap:addressable="false" sap:content-version="1" sap:creatable="false" sap:deletable="false" sap:pageable="false" sap:updatable="false"/>
+				<EntitySet EntityType="FDP_IDCNBSAIS_FORM_SRV.ItemNode_PL" Name="ItemNodePLSet" sap:addressable="false" sap:content-version="1" sap:creatable="false" sap:deletable="false" sap:pageable="false" sap:updatable="false"/>
+				<AssociationSet Association="FDP_IDCNBSAIS_FORM_SRV.HeadertoPL" Name="HeadertoPLSet" sap:content-version="1" sap:creatable="false" sap:deletable="false" sap:updatable="false">
+					<End EntitySet="HeaderNodeSet" Role="FromRole_HeadertoPL"/>
+					<End EntitySet="ItemNodePLSet" Role="ToRole_HeadertoPL"/>
+				</AssociationSet>
+				<AssociationSet Association="FDP_IDCNBSAIS_FORM_SRV.QuerytoHeader" Name="QueryResultSet" sap:content-version="1" sap:creatable="false" sap:deletable="false" sap:updatable="false">
+					<End EntitySet="QueryNodeSet" Role="FromRole_QuerytoHeader"/>
+					<End EntitySet="HeaderNodeSet" Role="ToRole_QuerytoHeader"/>
+				</AssociationSet>
+				<AssociationSet Association="FDP_IDCNBSAIS_FORM_SRV.HeadertoLE" Name="HeadertoLESet" sap:content-version="1" sap:creatable="false" sap:deletable="false" sap:updatable="false">
+					<End EntitySet="HeaderNodeSet" Role="FromRole_HeadertoLE"/>
+					<End EntitySet="ItemNodeLESet" Role="ToRole_HeadertoLE"/>
+				</AssociationSet>
+				<AssociationSet Association="FDP_IDCNBSAIS_FORM_SRV.HeadertoAS" Name="DataSet" sap:content-version="1" sap:creatable="false" sap:deletable="false" sap:updatable="false">
+					<End EntitySet="HeaderNodeSet" Role="FromRole_HeadertoAS"/>
+					<End EntitySet="ItemNodeASSet" Role="ToRole_HeadertoAS"/>
+				</AssociationSet>
+			</EntityContainer>
+			<atom:link href="https://ldai3er9.wdf.sap.corp:44300/sap/opu/odata/SAP/FDP_IDCNBSAIS_FORM_SRV/$metadata" rel="self" xmlns:atom="http://www.w3.org/2005/Atom"/>
+			<atom:link href="https://ldai3er9.wdf.sap.corp:44300/sap/opu/odata/SAP/FDP_IDCNBSAIS_FORM_SRV/$metadata" rel="latest-version" xmlns:atom="http://www.w3.org/2005/Atom"/>
+		</Schema>
+	</edmx:DataServices>
+</edmx:Edmx>

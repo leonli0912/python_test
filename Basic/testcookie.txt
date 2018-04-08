@@ -2,4 +2,7 @@
 # http://curl.haxx.se/rfc/cookie_spec.html
 # This is a generated file!  Do not edit.
 
-weibo.com	FALSE	/	FALSE		YF-V5-G0	9717632f62066ddd544bf04f733ad50a
+.weibo.cn	TRUE	/	FALSE		SSOLoginState	1523200929
+.weibo.cn	TRUE	/	FALSE	1554736929	SUB	_2A253zkPxDeRhGedM7FoS9S3Ewj-IHXVVMW25rDV6PUJbkdAKLXmmkW1NWDnpMxeqWwJgml-VafWGGJzHyleRPsDp
+.weibo.cn	TRUE	/	FALSE	1554736929	SUHB	0103y8zPzaMt8r
+passport.weibo.cn	FALSE	/	FALSE		login	966ea0a87f4cbf4599f17efc97e14ba9

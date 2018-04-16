@@ -1,0 +1,8 @@
+# Netscape HTTP Cookie File
+# http://curl.haxx.se/rfc/cookie_spec.html
+# This is a generated file!  Do not edit.
+
+.weibo.cn	TRUE	/	FALSE		SSOLoginState	1523892405
+.weibo.cn	TRUE	/	FALSE	1555428405	SUB	_2A2530LDlDeRhGedM7FoS9S3Ewj-IHXVVOtCtrDV6PUJbkdAKLXf-kW1NWDnpMzoOVA43hMSj6GWu35PBs5toWguR
+.weibo.cn	TRUE	/	FALSE	1555428405	SUHB	0z1xf19XzK3doX
+passport.weibo.cn	FALSE	/	FALSE		login	16999bd39c16867be9b835ce43bc6354
